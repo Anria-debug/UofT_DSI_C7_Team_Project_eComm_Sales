@@ -10,13 +10,13 @@ Clean and organize the data for analysis. Find patterns between Sales, Profit, a
 
 ### Project plan:
 Deliverable – End of Week 1 (Project Proposal)
-	• Business motivation: Explain the problem or opportunity your project addresses and why it matters from a business perspective.
-	• Dataset selection: Identify which dataset you chose, its source, and the key variables you’ll analyze.
-	• Project objective / research question: State the main question or hypothesis your analysis or model will answer.
-	• Proposed methods / approach: Briefly outline how you plan to explore the data (e.g., visualization, regression, classification, etc.).
-	• Roles and responsibilities: Indicate who is doing what within the team.
-	• Risks and unknowns: Note any challenges, assumptions, or potential limitations you’ve identified.
-	• Initial repository structure: Your GitHub repo should follow the suggested folder layout (data/, src/, reports/, etc.) and include a clean .gitignore.
+• Business motivation: Explain the problem or opportunity your project addresses and why it matters from a business perspective.
+• Dataset selection: Identify which dataset you chose, its source, and the key variables you’ll analyze.
+• Project objective / research question: State the main question or hypothesis your analysis or model will answer.
+• Proposed methods / approach: Briefly outline how you plan to explore the data (e.g., visualization, regression, classification, etc.).
+• Roles and responsibilities: Indicate who is doing what within the team.
+• Risks and unknowns: Note any challenges, assumptions, or potential limitations you’ve identified.
+• Initial repository structure: Your GitHub repo should follow the suggested folder layout (data/, src/, reports/, etc.) and include a clean .gitignore.
 
 
 ### Data cleaning temp notes:

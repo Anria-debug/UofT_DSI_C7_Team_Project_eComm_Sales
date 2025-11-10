@@ -8,6 +8,11 @@ E-Commerce dataset from Kaggle to study how different factors — like products,
 ## Objectives 
 Clean and organize the data for analysis. Find patterns between Sales, Profit, and Discounts. Identify which categories and regions are most profitable. Create easy-to-understand charts and graphs to share results. Build a model to predict future profit or sales
 
+### Responsibilities
+- Vikrama: business proposal, naming, data cleaning, experiments, code review
+- Iryna: dataset selection, data exploration, KPI development, setting business goals
+- Paul: repo management, project tracking, data exploration and cleaning, slides, vizualization, presentation management
+
 ### Project plan:
 Deliverable – End of Week 1 (Project Proposal)
 

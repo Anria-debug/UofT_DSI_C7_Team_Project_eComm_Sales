@@ -30,6 +30,17 @@ Deliverable – End of Week 1 (Project Proposal)
 
 • Initial repository structure: Your GitHub repo should follow the suggested folder layout (data/, src/, reports/, etc.) and include a clean .gitignore.
 
+### Risks/Unknowns
+* No clear way to calculate profit margins given the datasets
+* Lack of cost/BOM data for further analysis
+* Time constraints
+
+### Parameters (main ones)
+- price
+- product quantity
+- state
+- product type
+- date
 
 ### Data cleaning temp notes:
 1. Remove unnecessary columns

@@ -31,7 +31,7 @@ Clean and organize the data for analysis. Find patterns between Sales, Profit, a
 
 ### Responsibilities
 - Vikrama: business proposal, naming, data cleaning, experiments, code review
-- Iryna: dataset selection, data exploration, KPI development, setting business goals
+- Iryna: dataset selection, data exploration, KPI development, setting business goals, linear and random forest regression experiments
 - Paul: repo management, project tracking, data exploration and cleaning, slides, vizualization, presentation management
 
 ### Repository Structure & Reproducibility

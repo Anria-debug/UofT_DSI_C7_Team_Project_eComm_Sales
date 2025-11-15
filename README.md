@@ -50,7 +50,9 @@ The repository follows the recommended teaching structure from the Team Project 
 ├── models
 ├── reports
 ├── src
-│   └── Amazon Sale Report.ipynb
+│   ├── Amazon Sale Report.ipynb
+│   ├── Regression_Project_Amazon_Sales - 1.ipynb
+│   └── Amazon-Sales_Report-Power-BI.pbix
 ├── README.md
 └── .gitignore
 ```

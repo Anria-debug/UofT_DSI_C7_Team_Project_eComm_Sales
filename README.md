@@ -208,6 +208,33 @@ Using the main and experiments notebooks, we built several visualizations to ans
 
 In the regression-focused notebook (`experiments/Regression_Project_Amazon_Sales - 1.ipynb`), we begin exploring simple regression-style relationships between these numeric variables to better understand drivers of sales.
 
+### Regression Analysis: SKU-Level Drivers of Sales
+
+In `experiments/Regression_Project_Amazon_Sales - 1.ipynb`, we run a **SKU-level linear regression** to understand which product attributes are associated with higher total quantity sold per SKU:
+
+- We aggregate orders by SKU (and attributes such as `Style`, `Category`, `Size`, `Sales Channel`, `Fulfilment`, and `fulfilled-by`), computing **total quantity sold (`Qty`)** and **average `Amount`** per SKU.
+- We then one-hot encode categorical features and fit a **linear regression model** to predict `Qty` from product attributes and price.
+- Model performance: RMSE around **19 units** and R² around **0.04–0.05**, indicating that while SKU-level sales vary widely and are not fully explained by this simple linear model, the coefficients still highlight meaningful directional patterns.
+
+Key patterns from the regression coefficients and aggregated results:
+
+- **High-performing categories:**
+	- `Western Dress`, `Sets`, `Kurta`, `Top`, and `Ethnic Dress` have some of the **strongest positive coefficients**, indicating they tend to sell more units per SKU.
+	- Business implication: these categories are strong candidates for **priority stocking and promotion**, as they combine popularity with relatively higher volumes.
+
+- **Underperforming categories:**
+	- Categories such as **Sarees**, **Dupattas**, and **Bottoms** are associated with **lower SKU-level sales**.
+	- Business implication: avoid overstocking these categories or consider targeted strategies to improve their performance.
+
+- **Sizes that sell best:**
+	- Larger sizes (e.g., **M, L, XL, XXL, 4XL, 5XL, 6XL**) show positive relationships with quantity sold.
+	- Smaller sizes (**XS, S**) show weaker or negative effects.
+	- Business implication: demand is skewed toward **mid-to-large sizes**, so inventory planning should reflect this in size curves.
+
+Overall, the regression work supports a clear stocking strategy:
+- Focus inventory and marketing on **Western Dresses, Sets, Kurtas, Tops, and Ethnic Dresses** in **M–XXL and extended sizes (4XL–6XL)**.
+- Be more conservative with **Sarees, Dupattas, Bottoms** and very small sizes unless other business considerations justify higher stock.
+
 ### Early Business Insights
 
 Based on the current state of analysis (subject to refinement as the project continues):

@@ -193,7 +193,8 @@ These insights will be refined as we iterate on the regression experiments and p
 
 ---
 
-## Future versions:
+## Next Steps
 
+- Finalize the regression analysis in `experiments/Regression_Project_Amazon_Sales - 1.ipynb`, including clear model evaluation metrics (e.g., R², RMSE) and interpretation of coefficients.
 - Extend the ProfitLens README with final metrics, concrete business recommendations, and links to the main visualizations and any productionized artefacts (reports, dashboards, or saved models in `models/`).
 - Ensure fully reproducible setup instructions (environment file or `requirements.txt`) and, if time permits, a lightweight script or notebook entry-point for regenerating all figures from the cleaned dataset.

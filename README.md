@@ -105,6 +105,9 @@ Deliverable – End of Week 1 (Project Proposal)
 
 • Initial repository structure: Your GitHub repo should follow the suggested folder layout (data/, src/, reports/, etc.) and include a clean .gitignore.
 
+### Project Management tool used
+[GitHub Project](https://github.com/projects)
+
 ### Risks/Unknowns
 * No clear way to calculate profit margins given the datasets
 * Lack of cost/BOM data for further analysis
@@ -117,7 +120,7 @@ Deliverable – End of Week 1 (Project Proposal)
 - product type
 - date
 
-### Data cleaning temp notes:
+### Data cleaning temp notes (may be deleted with day one project delivery update):
 1. Remove unnecessary columns
 The column “index” is just numbering — you can delete it.
 “promotion-ids” may contain long text; you can either keep it for later or remove it if not needed for profit analysis.
@@ -153,6 +156,7 @@ Compare status vs. profit trends
 Find seasonal sales patterns
 Build visualizations for profitability insights
 THIS WE CAN INCLUDE FOR - Data Cleaning Tasks IN README FILE
+
 ### Preliminary data analysis ideas:
 
 What to Explore Exploratory Data Analysis (EDA Ideas)
@@ -206,7 +210,25 @@ Using the main and experiments notebooks, we built several visualizations to ans
 - **Time Series of Monthly Sales:** Line and area plots of monthly sales (with a 3‑month moving average) highlight seasonality, growth/decline periods, and peak months.
 - **Correlation Heatmaps:** Numeric correlations between `Amount`, `Qty`, and `Discount` are visualized via heatmaps, providing a quick view of how quantity and discount levels relate to sales.
 
+#### Power BI dashboard - early version
+<img width="2817" height="1566" alt="PBI" src="https://github.com/user-attachments/assets/5dc10947-19b8-4274-96d6-d5303dd77402" />
+
+#### Other visualization examples
+<img width="989" height="600" alt="saleStatus" src="https://github.com/user-attachments/assets/828ad922-3bbc-4264-bfc1-fd76cef5c2f2" />
+
+### Regression analysis
 In the regression-focused notebook (`experiments/Regression_Project_Amazon_Sales - 1.ipynb`), we begin exploring simple regression-style relationships between these numeric variables to better understand drivers of sales.
+
+Overall model
+
+RMSE: 19.35 - SKU-level sales vary a lot; some SKUs sell hundreds while most sell few - normal.
+
+R²: 0.0455 - Product attributes explain only 4.5% of variation in sales.
+But the coefficients still show clear patterns of what sells more.
+
+#### Category:  
+* Western Dress- Strongest positive effect — sells the most;
+* Sets (Set)- Also strong sellers;
 
 ### Early Business Insights
 
@@ -218,6 +240,14 @@ Based on the current state of analysis (subject to refinement as the project con
 - Time-series plots show **peak months** where sales spike, which can inform seasonal planning and promotional calendars.
 
 These insights will be refined as we iterate on the regression experiments and potentially incorporate more advanced modelling.
+
+## Bonus: UofT color themes for Power BI and Excel
+
+[UofT Excel color theme](https://github.com/pradziie/UofT_DSI_C7_Team_Project_eComm_Sales/blob/main/data/design/color%20themes/Excel_UofT_colors_2025.xml)
+(save it under C:\Users\<YourUser>\AppData\Roaming\Microsoft\Templates\Document Themes\Theme Colors\)
+
+[UofT Power BI color theme](https://github.com/pradziie/UofT_DSI_C7_Team_Project_eComm_Sales/blob/main/data/design/color%20themes/UofT%20Power%20BI%20Color%20Theme.json)
+(save and import it in Power BI Desktop via View → Themes → Browse for themes)
 
 ---
 

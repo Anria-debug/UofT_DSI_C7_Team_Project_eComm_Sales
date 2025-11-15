@@ -241,6 +241,14 @@ Based on the current state of analysis (subject to refinement as the project con
 
 These insights will be refined as we iterate on the regression experiments and potentially incorporate more advanced modelling.
 
+### Presentation link
+[placeholder]
+
+Individual team member video links:
+[Iryna]()
+[Vikrama]()
+[Paul]()
+
 ## Bonus: UofT color themes for Power BI and Excel
 
 [UofT Excel color theme](https://github.com/pradziie/UofT_DSI_C7_Team_Project_eComm_Sales/blob/main/data/design/color%20themes/Excel_UofT_colors_2025.xml)

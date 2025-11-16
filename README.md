@@ -34,6 +34,9 @@ E-Commerce dataset from Kaggle to study how different factors — like products,
  - Python
  - Power BI
 
+ ### Project Management tool used
+[GitHub Project](https://github.com/projects)
+
  ### Libraries Used:
  - Numpy: matrix operations
  - Pandas: data analysis
@@ -140,8 +143,7 @@ Deliverable – End of Week 1 (Project Proposal)
 
 • Initial repository structure: Your GitHub repo should follow the suggested folder layout (data/, src/, reports/, etc.) and include a clean .gitignore.
 
-### Project Management tool used
-[GitHub Project](https://github.com/projects)
+
 
 ### Risks/Unknowns
 * No clear way to calculate profit margins given the datasets

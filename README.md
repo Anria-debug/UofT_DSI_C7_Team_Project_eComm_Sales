@@ -196,6 +196,15 @@ Promote top categories: Western Dresses and Sets are consistently top-sellers.
 Consider expanding variants in the top-selling sizes (L and M) to capture more demand.
 Lower emphasis on less influential categories until there is data showing potential growth.
 
+# Model Performance Summary:
+Both models identify the same top-selling SKUs and use the same features, but the quality of insights is very different. Random Forest produces accurate predictions and meaningful feature importance, while Linear Regression provides weak predictions and unstable, contradictory coefficients.
+
+Results of RFR are also confirmed by Sales by Category bar chart:
+<img width="714" height="528" alt="image" src="https://github.com/user-attachments/assets/c7002c46-9e9f-4a2b-b0b8-b70a6dc3325b" />
+Top 10 Cities by Sales suggests which cities are important for stocking:
+<img width="895" height="479" alt="image" src="https://github.com/user-attachments/assets/6f43e01e-04b3-4861-844f-4fa645a6dbbf" />
+
+
 ### Preliminary data analysis ideas:
 
 What to Explore Exploratory Data Analysis (EDA Ideas)

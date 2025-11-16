@@ -21,7 +21,7 @@ Clean and organize the data for analysis. Find patterns between Sales, Profit, a
 - Which product categories contribute the most to overall sales (and proxy profit)?
 - Which cities/states and fulfillment channels (Amazon vs Merchant) drive the highest sales volumes?
 - How do order status and discount-related variables relate to sales performance?
-- What are the key time-based trends in sales, and can simple regression-type relationships help explain variation in revenue?
+- What are the key time-based trends in sales, and can simple regression-type relationships help explain popularity of the product?
 
 **Proposed methods / approach:**
 - Systematic **data cleaning and feature engineering** in `src/Amazon Sale Report.ipynb` (handling missing values, standardizing text, deriving year/month features, and exporting a cleaned dataset).
@@ -252,3 +252,7 @@ Individual team member video links:
 
 - Extend the ProfitLens README with final metrics, concrete business recommendations, and links to the main visualizations and any productionized artefacts (reports, dashboards, or saved models in `models/`).
 - Ensure fully reproducible setup instructions (environment file or `requirements.txt`) and, if time permits, a lightweight script or notebook entry-point for regenerating all figures from the cleaned dataset.
+
+- Credits and Source
+The data was sourced from Kaggle.
+

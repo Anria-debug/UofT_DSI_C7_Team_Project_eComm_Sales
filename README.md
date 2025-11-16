@@ -13,7 +13,7 @@
  - [Data Analysis and Recommendations](#data-analysis-and-recommendations)
  - [Conclusion](#conclusion)
  - [Team Videos](#team-videos)
- - [Bonus: UofT color themes for Power BI and Excel](#Bonus:-UofT-color-themes-for-Power-BI-and-Excel)
+ - [Bonus: UofT color themes for Power BI and Excel](#bonus-uoft-color-themes-for-power-bi-and-excel)
  - [Credits and Source](#credits)
    
 # Purpose and Overview 

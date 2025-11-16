@@ -46,6 +46,12 @@ E-Commerce dataset from Kaggle to study how different factors — like products,
 
 **Dataset selection:** We use the public **“Amazon Sale Report”** dataset from Kaggle. It contains order-level information including product category, quantity, amount, order status, fulfillment type, dates, and shipping details (city, state, postal code). This dataset is stored under `data/raw/Amazon Sale Report.csv`, with a cleaned version exported to `data/processed/Amazon_Sale_Report_Cleaned.csv` from the main analysis notebook in `src/Amazon Sale Report.ipynb`.
 
+## Stakeholders
+- Business Leadership / Executives - Make strategic decisions based on visualizations.
+- Sales & Marketing Teams - Use the insights to decide which promotions to run, and align inventory with demand.
+- Operations / Inventory / Supply Chain - Use demand forecasts to optimize stock levels, avoid overstocking low-margin SKUs, and reduce holding costs.
+
+  
 **Main questions / research focus:**
 - Which product categories contribute the most to overall sales (and proxy profit)?
 - Which cities/states and fulfillment channels (Amazon vs Merchant) drive the highest sales volumes?

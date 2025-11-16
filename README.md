@@ -30,7 +30,7 @@ E-Commerce dataset from Kaggle to study how different factors — like products,
 
  ## Technical Stack:
  - Python
- -Power BI
+ - Power BI
 
 ## Project Overview (Proposal)
 

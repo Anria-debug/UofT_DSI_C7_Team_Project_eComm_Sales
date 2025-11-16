@@ -205,7 +205,22 @@ Results of RFR are also confirmed by Sales by Category bar chart:
 Top 10 Cities by Sales suggests which cities are important for stocking:
 <img width="895" height="479" alt="image" src="https://github.com/user-attachments/assets/6f43e01e-04b3-4861-844f-4fa645a6dbbf" />
 
+Recommendations based on Orders by Fulfilment chart.\
+<img width="406" height="269" alt="image" src="https://github.com/user-attachments/assets/7f7fb80c-c68f-4019-8f46-a9850971229c" />
 
+1. Increase Amazon-Fulfilled (FBA) Inventory
+Since 70% of your demand naturally prefers FBA, you should ensure:
+- FBA inventory is never out of stock
+- High-velocity SKUs (your top sellers) always have FBA coverage
+- Reduce long-term storage fees by trimming slow-moving FBA items, but keep fast movers stocked
+
+2. Improve FBM Performance for Cost Efficiency
+Since you still have 31% FBM, optimize it rather than eliminating it.
+- Ensure fast dispatch times
+- Maintain accurate stock to avoid cancellations
+- Improve packaging/handling time
+- Use regional carriers with cheaper rates
+- 
 ### Preliminary data analysis ideas:
 
 What to Explore Exploratory Data Analysis (EDA Ideas)

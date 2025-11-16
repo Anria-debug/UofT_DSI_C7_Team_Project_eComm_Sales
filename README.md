@@ -13,7 +13,7 @@
  - [Team Videos](#team-videos)
  - [Credits and Source](#credits)
    
-#Purpose and Overview 
+# Purpose and Overview 
 
 Our goal is to understand which products, regions, and discount strategies drive the highest profitability and how data-driven decisions can improve business outcomes. Many e-commerce sellers have rich order data but limited visibility into which product categories, regions, and discount strategies drive the most revenue and potential profit. ProfitLens focuses on turning historical Amazon order data into clear, action-oriented insights that can guide pricing, inventory, and fulfillment decisions.
 

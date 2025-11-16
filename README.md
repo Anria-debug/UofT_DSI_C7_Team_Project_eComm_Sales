@@ -1,6 +1,7 @@
 # UofT DSI C7 Team Project eComm Sales
 ## ProfitLens: Visualizing E-Commerce Trends
 <img width="200" height="200" alt="profitLensLogo3" src="https://github.com/user-attachments/assets/fddb7c29-38b7-492e-8d77-59920b1b5698" />
+
 # Project Overview
  - [Purpose and Overview](#purpose-and-overview)
  - [Methodology](#methodology)

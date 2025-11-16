@@ -145,7 +145,8 @@ These transformations are implemented in the `src/Amazon Sale Report.ipynb` note
 # Data Analysis And Recommendations
 
 Based on this pie chart, the recommendation is to introduce targeted promotions designed to increase repeat purchases.
-<img width="931" height="649" alt="image" src="https://github.com/user-attachments/assets/a21bd530-a3d3-433d-a81a-96bc403c5d6a" />
+<img width="572" height="599" alt="image" src="https://github.com/user-attachments/assets/77395e60-4d70-4730-a556-07196e5ddb40" />
+
 Repeat Purchases can be increased through:
 1. Personalized Promotions - Customers respond better when offers feel relevant.
 Examples:

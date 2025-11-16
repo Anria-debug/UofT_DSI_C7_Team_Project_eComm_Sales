@@ -63,7 +63,7 @@ E-Commerce dataset from Kaggle to study how different factors — like products,
 - Iryna: dataset selection, data exploration, KPI development, setting business goals, linear and random forest regression experiments
 - Paul: repo management, project tracking, data exploration and cleaning, slides, vizualization, presentation management
 
-### Repository Structure & Reproducibility
+# Repository Structure & Reproducibility
 
 The repository follows the recommended teaching structure from the Team Project guidelines, with a few project-specific additions (some duplication was needed for backups and reproducibility):
 

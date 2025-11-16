@@ -7,6 +7,7 @@
  - [Methodology](#methodology)
  - [Project Scope](#project-scope)
  - [Responsibilities](#Responsibilities)
+ - [Repository Structure & Reproducibility](#Repository-Structure-&-Reproducibility)
  - [Understanding the Data](#understanding-the-data)
  - [Data Cleaning](#data-cleaning)
  - [Data Analysis](#data-analysis)

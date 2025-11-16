@@ -28,8 +28,11 @@ E-Commerce dataset from Kaggle to study how different factors — like products,
 -Visualization: Developed clear visualizations to communicate insights and model outcomes.\
 -Conclusion: Summarized findings, model results, and actionable insights derived from the analysis.
 
-## Project Overview (Proposal)
+ ## Technical Stack:
+ - Python
+ -Power BI
 
+## Project Overview (Proposal)
 
 **Dataset selection:** We use the public **“Amazon Sale Report”** dataset from Kaggle. It contains order-level information including product category, quantity, amount, order status, fulfillment type, dates, and shipping details (city, state, postal code). This dataset is stored under `data/raw/Amazon Sale Report.csv`, with a cleaned version exported to `data/processed/Amazon_Sale_Report_Cleaned.csv` from the main analysis notebook in `src/Amazon Sale Report.ipynb`.
 

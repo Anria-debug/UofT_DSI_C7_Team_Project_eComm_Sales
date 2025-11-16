@@ -265,7 +265,9 @@ Our recommendation for the business stakeholders is to make use of the Random Fo
 
 Individual team member video links:
 [Iryna]()
+
 [Vikrama]()
+
 [Paul]()
 
 ## Bonus: UofT color themes for Power BI and Excel

@@ -219,13 +219,13 @@ Recommendations based on Orders by Fulfilment chart.\
 <img width="406" height="269" alt="image" src="https://github.com/user-attachments/assets/7f7fb80c-c68f-4019-8f46-a9850971229c" />
 
 1. Increase Amazon-Fulfilled (FBA) Inventory
-Since 70% of your demand naturally prefers FBA, you should ensure:
+Since 70% of our demand naturally prefers FBA, we should ensure:
 - FBA inventory is never out of stock
 - High-velocity SKUs (your top sellers) always have FBA coverage
 - Reduce long-term storage fees by trimming slow-moving FBA items, but keep fast movers stocked
 
 2. Improve FBM Performance for Cost Efficiency
-Since you still have 31% FBM, optimize it rather than eliminating it.
+Since we still have 31% FBM, optimize it rather than eliminating it.
 - Ensure fast dispatch times
 - Maintain accurate stock to avoid cancellations
 - Improve packaging/handling time

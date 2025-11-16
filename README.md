@@ -170,13 +170,14 @@ Ideas:
 - Members-only sales
 - New product drops with early access
 
+#In the regression-focused notebook (`experiments/Regression_Project_Amazon_Sales - 1.ipynb`), we begin exploring simple regression-style relationships between these numeric variables to better understand drivers of sales.
 # SKU-Level Linear Regression: What Sells Most
 This version aggregates all orders by SKU to get each product’s total quantity sold and average amount.
 Then it fits a linear regression model to see which attributes drive higher total sales.
 Overall model
 RMSE: 19.35 - SKU-level sales vary a lot; some SKUs sell hundreds while most sell few - normal.
 R²: 0.0455 - Product attributes explain only 4.5% of variation in sales. But the coefficients still show clear patterns of what sells more.
-Beasue it explains only for 4.5% of variation in sales, Sku-Level REgression was tested (Random Forest REgressor). 
+Because it explains only for 4.5% of variation in sales, Sku-Level REgression was tested (Random Forest REgressor). 
 # Random Forest Regressor gave the following results:
 # SKU Regression Results 
 RMSE: 2.55 -  on average, the model's predicted SKU counts are off by about 2.5 units, meaning predictions are reliable.

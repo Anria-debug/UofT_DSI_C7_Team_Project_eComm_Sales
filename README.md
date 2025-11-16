@@ -164,6 +164,11 @@ Techniques:
 - Send order follow-up email with product care tips
 - Ask for a review (and give a small incentive)
 - Suggest complementary products
+4.Create Urgency or Exclusivity - People buy again when they feel they might miss out.
+Ideas:
+- Limited-time deals
+- Members-only sales
+- New product drops with early access
 ### Preliminary data analysis ideas:
 
 What to Explore Exploratory Data Analysis (EDA Ideas)

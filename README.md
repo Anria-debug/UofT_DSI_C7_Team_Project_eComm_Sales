@@ -142,7 +142,7 @@ To reproduce the analysis:
 
 These transformations are implemented in the `src/Amazon Sale Report.ipynb` notebook and exported as `Amazon_Sale_Report_Cleaned.csv` under `data/processed/`.
 
-# Data Analysis
+# Data Analysis And Recommendations
 
 Based on this pie chart, the recommendation is to introduce targeted promotions designed to increase repeat purchases.
 <img width="931" height="649" alt="image" src="https://github.com/user-attachments/assets/a21bd530-a3d3-433d-a81a-96bc403c5d6a" />

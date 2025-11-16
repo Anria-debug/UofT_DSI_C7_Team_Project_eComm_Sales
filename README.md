@@ -253,6 +253,7 @@ Individual team member video links:
 - Extend the ProfitLens README with final metrics, concrete business recommendations, and links to the main visualizations and any productionized artefacts (reports, dashboards, or saved models in `models/`).
 - Ensure fully reproducible setup instructions (environment file or `requirements.txt`) and, if time permits, a lightweight script or notebook entry-point for regenerating all figures from the cleaned dataset.
 
-- Credits and Source
+## Credits and Source
+  
 The data was sourced from Kaggle.
 

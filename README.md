@@ -169,7 +169,7 @@ Ideas:
 - Members-only sales
 - New product drops with early access
 
-#SKU-Level Linear Regression: What Sells Most
+# SKU-Level Linear Regression: What Sells Most
 This version aggregates all orders by SKU to get each product’s total quantity sold and average amount.
 Then it fits a linear regression model to see which attributes drive higher total sales.
 Overall model

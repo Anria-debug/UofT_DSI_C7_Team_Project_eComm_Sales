@@ -126,36 +126,22 @@ To reproduce the analysis:
 3. Run the notebook `src/Amazon Sale Report.ipynb` from the project root. The notebook loads the raw file using **relative paths** via `pathlib`, performs cleaning, and exports `data/processed/Amazon_Sale_Report_Cleaned.csv`.
 4. Optional: Open `experiments/Regression_Project_Amazon_Sales - 1.ipynb` to explore additional regression-focused experiments.
 
-### Project plan:
-Deliverable – End of Week 1 (Project Proposal)
-
-• Business motivation: Explain the problem or opportunity your project addresses and why it matters from a business perspective.
-
-• Dataset selection: Identify which dataset you chose, its source, and the key variables you’ll analyze.
-
-• Project objective / research question: State the main question or hypothesis your analysis or model will answer.
-
-• Proposed methods / approach: Briefly outline how you plan to explore the data (e.g., visualization, regression, classification, etc.).
-
-• Roles and responsibilities: Indicate who is doing what within the team.
-
-• Risks and unknowns: Note any challenges, assumptions, or potential limitations you’ve identified.
-
-• Initial repository structure: Your GitHub repo should follow the suggested folder layout (data/, src/, reports/, etc.) and include a clean .gitignore.
-
-
-
-### Risks/Unknowns
-* No clear way to calculate profit margins given the datasets
-* Lack of cost/BOM data for further analysis
-* Time constraints
-
-### Parameters (main ones)
+ # Understanding the Data
+ ### Parameters (main ones)
 - price
 - product quantity
 - state
 - product type
 - date
+# Data Cleaning
+- Removed technical or redundant columns such as `index` and `Unnamed: 22`.
+- Standardized column names and cleaned text fields (`Category`, `ship-state`, `Status`, etc.) by trimming whitespace and converting to lowercase to avoid duplicates.
+- Converted `Date` to a proper datetime type and derived additional features such as `Year`, `Month`, and `Year-Month` for trend analysis.
+- Ensured `Amount` is numeric and dropped rows with missing `Amount` (since sales amount is central to all analyses).
+- Cleaned `ship-postal-code` to an integer-like type using pandas nullable integers, and filled key text fields (e.g., `Courier Status`, `ship-city`, `ship-state`, `fulfilled-by`) with "Unknown" when missing.
+
+These transformations are implemented in the `src/Amazon Sale Report.ipynb` notebook and exported as `Amazon_Sale_Report_Cleaned.csv` under `data/processed/`.
+
 
 ### Data cleaning temp notes (may be deleted with day one project delivery update):
 1. Remove unnecessary columns

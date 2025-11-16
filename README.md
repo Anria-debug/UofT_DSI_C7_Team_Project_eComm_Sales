@@ -158,7 +158,6 @@ Ideas:
 - Points for every purchase
 - Tier levels (Silver, Gold, Platinum)
 - Birthday or anniversary rewards
-- Exclusive access to new products
 3. Post-Purchase Follow-Up - Customers often buy again if they feel supported.
 Techniques:
 - Send order follow-up email with product care tips
@@ -169,6 +168,34 @@ Ideas:
 - Limited-time deals
 - Members-only sales
 - New product drops with early access
+
+#SKU-Level Linear Regression: What Sells Most
+This version aggregates all orders by SKU to get each product’s total quantity sold and average amount.
+Then it fits a linear regression model to see which attributes drive higher total sales.
+Overall model
+RMSE: 19.35 - SKU-level sales vary a lot; some SKUs sell hundreds while most sell few - normal.
+R²: 0.0455 - Product attributes explain only 4.5% of variation in sales. But the coefficients still show clear patterns of what sells more.
+Beasue it explains only for 4.5% of variation in sales, Sku-Level REgression was tested (Random Forest REgressor). 
+# Random Forest Regressor gave the following results:
+# SKU Regression Results 
+RMSE: 2.55 -  on average, the model's predicted SKU counts are off by about 2.5 units, meaning predictions are reliable.
+R²: 0.9835 - the model explains 98.35% of the variance in SKU demand/popularity.
+The SKU’s performance is driven heavily by overall spending behavior, not by product attributes like size, category, or fulfillment type.
+
+Recomendation based on RFR model:
+1. Pricing & Inventory
+Focus on TotalAmount/price points: Since sales are highly driven by the total value of SKUs, consider adjusting inventory and promotions around high-value items.
+Stock high-selling SKUs heavily:
+Western Dresses (L/M/S)
+Sets (S/M/XL)
+Kurta (L/S)
+Ensuring these SKUs are always in stock can maximize revenue.
+
+2. Product & Category Strategy
+Promote top categories: Western Dresses and Sets are consistently top-sellers.
+Consider expanding variants in the top-selling sizes (L and M) to capture more demand.
+Lower emphasis on less influential categories until there is data showing potential growth.
+
 ### Preliminary data analysis ideas:
 
 What to Explore Exploratory Data Analysis (EDA Ideas)

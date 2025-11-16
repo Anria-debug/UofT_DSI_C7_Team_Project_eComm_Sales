@@ -1,19 +1,26 @@
 # UofT DSI C7 Team Project eComm Sales
 ## ProfitLens: Visualizing E-Commerce Trends
 <img width="200" height="200" alt="profitLensLogo3" src="https://github.com/user-attachments/assets/fddb7c29-38b7-492e-8d77-59920b1b5698" />
+# Project Overview
+ - [Purpose and Overview](#purpose-and-overview)
+ - [Methodology](#methodology)
+ - [Project Scope](#project-scope)
+ - [Understanding the Data](#understanding-the-data)
+ - [Data Cleaning](#data-cleaning)
+ - [Data Analysis](#data-analysis)
+ - [Conclusion](#conclusion)
+ - [Team Videos](#team-videos)
+ - [Credits and Source](#credits)
+   
+#Purpose and Overview 
+Our goal is to understand which products, regions, and discount strategies drive the highest profitability and how data-driven decisions can improve business outcomes. Many e-commerce sellers have rich order data but limited visibility into which product categories, regions, and discount strategies drive the most revenue and potential profit. ProfitLens focuses on turning historical Amazon order data into clear, action-oriented insights that can guide pricing, inventory, and fulfillment decisions.
 
-Business proposal - "Our goal is to understand which products, regions, and discount strategies drive the highest profitability and how data-driven decisions can improve business outcomes"
-
-E-Commerce dataset from Kaggle to study how different factors — like products, regions, and discounts — affect sales and profit. We want to find out which areas of the business make the most money and how companies can use data to make smarter decisions.
-
-## Objectives 
-Clean and organize the data for analysis. Find patterns between Sales, Profit, and Discounts. Identify which categories and regions are most profitable. Create easy-to-understand charts and graphs to share results. Build a model to predict future profit or sales.
+E-Commerce dataset from Kaggle to study how different factors — like products, regions, and MRP — affect sales and profit. We want to find out which areas of the business make the most money and how companies can use data to make smarter decisions.
 
 ---
 
 ## Project Overview (Proposal)
 
-**Business motivation:** Many e-commerce sellers have rich order data but limited visibility into which product categories, regions, and discount strategies drive the most revenue and potential profit. ProfitLens focuses on turning historical Amazon order data into clear, action-oriented insights that can guide pricing, inventory, and fulfillment decisions.
 
 **Dataset selection:** We use the public **“Amazon Sale Report”** dataset from Kaggle. It contains order-level information including product category, quantity, amount, order status, fulfillment type, dates, and shipping details (city, state, postal code). This dataset is stored under `data/raw/Amazon Sale Report.csv`, with a cleaned version exported to `data/processed/Amazon_Sale_Report_Cleaned.csv` from the main analysis notebook in `src/Amazon Sale Report.ipynb`.
 

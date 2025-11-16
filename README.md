@@ -6,6 +6,7 @@
  - [Purpose and Overview](#purpose-and-overview)
  - [Methodology](#methodology)
  - [Project Scope](#project-scope)
+ - [Responsibilities](#Responsibilities)
  - [Understanding the Data](#understanding-the-data)
  - [Data Cleaning](#data-cleaning)
  - [Data Analysis](#data-analysis)

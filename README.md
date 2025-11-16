@@ -142,44 +142,28 @@ To reproduce the analysis:
 
 These transformations are implemented in the `src/Amazon Sale Report.ipynb` notebook and exported as `Amazon_Sale_Report_Cleaned.csv` under `data/processed/`.
 
+# Data Analysis
 
-### Data cleaning temp notes (may be deleted with day one project delivery update):
-1. Remove unnecessary columns
-The column “index” is just numbering — you can delete it.
-“promotion-ids” may contain long text; you can either keep it for later or remove it if not needed for profit analysis.
-2. Fix missing values
-Some columns have missing entries:
-Courier Status, currency, Amount, ship-city, ship-state, fulfilled-by
-You can:
-Fill missing text fields with "Unknown"
-Drop rows with missing Amount (since sales amount is essential)
-3. Convert data types
-Date should be changed from text to date format (for time-based analysis).
-ship-postal-code should be made an integer (it’s currently stored as float).
-Columns like Amount should be numeric (already fine)
-4. Handle inconsistent text formats
-Convert all text columns like Category, ship-state, Status to lowercase to avoid duplicates like “Shipped” vs “shipped”.
-Remove extra spaces.
-5. Check for duplicate records
-Sometimes the same Order ID might appear twice (especially with status changes).
- Keep only the most recent or relevant status.
-6. Clean or group categorical values
-Combine similar order statuses like "Shipped - Delivered to Buyer" and "Shipped" into one.
-Group fulfillment types (e.g., Amazon, Merchant) for consistency.
-7. Currency consistency
-If the dataset contains multiple currencies, convert them all to one (e.g., INR).
-If it’s all INR, confirm and keep the column clean.
-8. Optional: Add derived columns
-Once clean, you can add:
-Profit Margin = Amount / Qty
-Month / Year extracted from Date for trend analysis.
-After data cleaning, your dataset will be ready to:
-Analyze sales by category, city, or fulfillment type
-Compare status vs. profit trends
-Find seasonal sales patterns
-Build visualizations for profitability insights
-THIS WE CAN INCLUDE FOR - Data Cleaning Tasks IN README FILE
-
+Based on this pie chart, the recommendation is to introduce targeted promotions designed to increase repeat purchases.
+<img width="931" height="649" alt="image" src="https://github.com/user-attachments/assets/a21bd530-a3d3-433d-a81a-96bc403c5d6a" />
+Repeat Purchases can be increased through:
+1. Personalized Promotions - Customers respond better when offers feel relevant.
+Examples:
+- Discounts based on previous purchases
+- “We miss you” promo after 30 days of no activity
+- Bundle discounts on frequently bought-together items
+- Personalized emails with product recommendations
+2. Loyalty or Rewards Program - Make customers feel rewarded for coming back.
+Ideas:
+- Points for every purchase
+- Tier levels (Silver, Gold, Platinum)
+- Birthday or anniversary rewards
+- Exclusive access to new products
+3. Post-Purchase Follow-Up - Customers often buy again if they feel supported.
+Techniques:
+- Send order follow-up email with product care tips
+- Ask for a review (and give a small incentive)
+- Suggest complementary products
 ### Preliminary data analysis ideas:
 
 What to Explore Exploratory Data Analysis (EDA Ideas)

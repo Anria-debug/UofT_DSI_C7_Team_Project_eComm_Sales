@@ -256,4 +256,4 @@ Individual team member video links:
 ## Credits and Source
   
 The data was sourced from Kaggle.\
-[E-coomerce-sales](https://www.kaggle.com/datasets/thedevastator/unlock-profits-with-e-commerce-sales-data)
+[E-commerce-sales](https://www.kaggle.com/datasets/thedevastator/unlock-profits-with-e-commerce-sales-data)

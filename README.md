@@ -20,6 +20,13 @@ Our goal is to understand which products, regions, and discount strategies driv
 E-Commerce dataset from Kaggle to study how different factors — like products, regions, and MRP — affect sales and profit. We want to find out which areas of the business make the most money and how companies can use data to make smarter decisions.
 
 ---
+# Methodology
+## Steps taken:
+-Data Cleaning: Addressed missing values, corrected inconsistencies, and prepared the dataset for analysis.
+-Exploratory Analysis: Examined data patterns, distributions, and correlations to uncover key relationships.
+-Regression Modeling and Validation: Applied Linear Regression and Random Forest Regressor to analyze factors influencing product popularity and sales performance. Built training and test sets, evaluated model accuracy using metrics such as RMSE and R², and used the insights to understand which products should be prioritized for stocking.
+-Visualization: Developed clear visualizations to communicate insights and model outcomes.
+-Conclusion: Summarized findings, model results, and actionable insights derived from the analysis.
 
 ## Project Overview (Proposal)
 

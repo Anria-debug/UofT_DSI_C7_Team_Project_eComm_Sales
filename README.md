@@ -10,7 +10,7 @@
  - [Repository Structure & Reproducibility](#Repository-Structure-&-Reproducibility)
  - [Understanding the Data](#understanding-the-data)
  - [Data Cleaning](#data-cleaning)
- - [Data Analysis](#data-analysis)
+ - [Data Analysis and Recommendations](#data-analysis-and-recommendations)
  - [Conclusion](#conclusion)
  - [Team Videos](#team-videos)
  - [Credits and Source](#credits)
@@ -144,7 +144,9 @@ These transformations are implemented in the `src/Amazon Sale Report.ipynb` note
 
 # Data Analysis And Recommendations
 
-Based on this pie chart, the recommendation is to introduce targeted promotions designed to increase repeat purchases.
+Based on this pie chart, the recommendation is to introduce targeted promotions designed to increase repeat purchases.\
+
+
 <img width="572" height="599" alt="image" src="https://github.com/user-attachments/assets/77395e60-4d70-4730-a556-07196e5ddb40" />
 
 Repeat Purchases can be increased through:

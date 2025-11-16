@@ -149,7 +149,7 @@ Based on this pie chart, the recommendation is to introduce targeted promotions 
 
 <img width="572" height="599" alt="image" src="https://github.com/user-attachments/assets/77395e60-4d70-4730-a556-07196e5ddb40" />
 
-Repeat Purchases can be increased through:
+### Repeat Purchases can be increased through:
 1. Personalized Promotions - Customers respond better when offers feel relevant.
 Examples:
 - Discounts based on previous purchases
@@ -157,55 +157,60 @@ Examples:
 - Bundle discounts on frequently bought-together items
 - Personalized emails with product recommendations
 2. Loyalty or Rewards Program - Make customers feel rewarded for coming back.
-Ideas:
 - Points for every purchase
 - Tier levels (Silver, Gold, Platinum)
 - Birthday or anniversary rewards
 3. Post-Purchase Follow-Up - Customers often buy again if they feel supported.
-Techniques:
 - Send order follow-up email with product care tips
 - Ask for a review (and give a small incentive)
 - Suggest complementary products
+  
 4.Create Urgency or Exclusivity - People buy again when they feel they might miss out.
-Ideas:
 - Limited-time deals
 - Members-only sales
 - New product drops with early access
-
-#In the regression-focused notebook (`experiments/Regression_Project_Amazon_Sales - 1.ipynb`), we begin exploring simple regression-style relationships between these numeric variables to better understand drivers of sales.
-# SKU-Level Linear Regression: What Sells Most
+- 
+#  Applied Linear Regression and Random Forest Regressor to analyze factors influencing product popularity
+In the regression-focused notebook (`experiments/Regression_Project_Amazon_Sales - 1.ipynb`), we begin exploring simple regression-style relationships between these numeric variables to better understand drivers of sales.
+### SKU-Level Linear Regression: What Sells Most
 This version aggregates all orders by SKU to get each product’s total quantity sold and average amount.
 Then it fits a linear regression model to see which attributes drive higher total sales.
 Overall model
 RMSE: 19.35 - SKU-level sales vary a lot; some SKUs sell hundreds while most sell few - normal.
 R²: 0.0455 - Product attributes explain only 4.5% of variation in sales. But the coefficients still show clear patterns of what sells more.
 Because it explains only for 4.5% of variation in sales, Sku-Level REgression was tested (Random Forest REgressor). 
-# Random Forest Regressor gave the following results:
-# SKU Regression Results 
+
+### Random Forest Regressor gave the following results:
+
 RMSE: 2.55 -  on average, the model's predicted SKU counts are off by about 2.5 units, meaning predictions are reliable.
 R²: 0.9835 - the model explains 98.35% of the variance in SKU demand/popularity.
 The SKU’s performance is driven heavily by overall spending behavior, not by product attributes like size, category, or fulfillment type.
 
-Recomendation based on RFR model:
-1. Pricing & Inventory
+### Recomendation based on RFR model:
+1. Pricing & Inventory.
 Focus on TotalAmount/price points: Since sales are highly driven by the total value of SKUs, consider adjusting inventory and promotions around high-value items.
-Stock high-selling SKUs heavily:
-Western Dresses (L/M/S)
-Sets (S/M/XL)
-Kurta (L/S)
+- Stock high-selling SKUs heavily:
+- Western Dresses (L/M/S)
+- Sets (S/M/XL)
+- Kurta (L/S)
 Ensuring these SKUs are always in stock can maximize revenue.
 
-2. Product & Category Strategy
-Promote top categories: Western Dresses and Sets are consistently top-sellers.
-Consider expanding variants in the top-selling sizes (L and M) to capture more demand.
-Lower emphasis on less influential categories until there is data showing potential growth.
+2. Product & Category Strategy.
+- Promote top categories: Western Dresses and Sets are consistently top-sellers.
+- Consider expanding variants in the top-selling sizes (L and M) to capture more demand.
+- Lower emphasis on less influential categories until there is data showing potential growth.
 
 # Model Performance Summary:
 Both models identify the same top-selling SKUs and use the same features, but the quality of insights is very different. Random Forest produces accurate predictions and meaningful feature importance, while Linear Regression provides weak predictions and unstable, contradictory coefficients.
 
-Results of RFR are also confirmed by Sales by Category bar chart:
+### Results of RFR are also confirmed by 
+Sales by Category bar chart:
+
 <img width="714" height="528" alt="image" src="https://github.com/user-attachments/assets/c7002c46-9e9f-4a2b-b0b8-b70a6dc3325b" />
+### More Recommendations
+
 Top 10 Cities by Sales suggests which cities are important for stocking:
+
 <img width="895" height="479" alt="image" src="https://github.com/user-attachments/assets/6f43e01e-04b3-4861-844f-4fa645a6dbbf" />
 
 Recommendations based on Orders by Fulfilment chart.\
@@ -223,51 +228,9 @@ Since you still have 31% FBM, optimize it rather than eliminating it.
 - Maintain accurate stock to avoid cancellations
 - Improve packaging/handling time
 - Use regional carriers with cheaper rates
-- 
-### Preliminary data analysis ideas:
+ 
 
-What to Explore Exploratory Data Analysis (EDA Ideas)
-Once cleaned, you can analyze patterns like:
-
-**Product Insights**
-Which categories (e.g., kurta, top, dress) sell the most?
-Which category brings the highest revenue?
-
-**Regional Insights**
-Which states or cities have the most orders?
-Are certain regions more profitable?
-
-**Order Performance**
-Compare Amazon-fulfilled vs Merchant-fulfilled orders.
-Find how many were cancelled, shipped, or pending.
-
-**Sales & Discount Patterns**
-How does quantity relate to total amount?
-Check if discounts or promotions affect sales volume.
-
-**Time-based Trends**
-Which months or days have the most orders or sales?
-Detect seasonal spikes in sales (for example, festivals or holidays).
-Once the data is clean, you can create charts like:
-Bar Chart: Sales by category
-Pie Chart: Order status breakdown
-Line Chart: Monthly sales trends
-Heatmap: Correlation between sales amount, quantity, and discounts
-
----
-
-## Methods & Key Findings (Current Status)
-
-### Data Cleaning & Feature Engineering
-- Removed technical or redundant columns such as `index` and `Unnamed: 22`.
-- Standardized column names and cleaned text fields (`Category`, `ship-state`, `Status`, etc.) by trimming whitespace and converting to lowercase to avoid duplicates.
-- Converted `Date` to a proper datetime type and derived additional features such as `Year`, `Month`, and `Year-Month` for trend analysis.
-- Ensured `Amount` is numeric and dropped rows with missing `Amount` (since sales amount is central to all analyses).
-- Cleaned `ship-postal-code` to an integer-like type using pandas nullable integers, and filled key text fields (e.g., `Courier Status`, `ship-city`, `ship-state`, `fulfilled-by`) with "Unknown" when missing.
-
-These transformations are implemented in the `src/Amazon Sale Report.ipynb` notebook and exported as `Amazon_Sale_Report_Cleaned.csv` under `data/processed/`.
-
-### Exploratory Visualizations
+### Extra Visualizations
 Using the main and experiments notebooks, we built several visualizations to answer our core questions:
 
 - **Sales by Category:** Horizontal bar charts highlight the top 10 categories by sales, with the highest-performing category accentuated (e.g., gold highlight). This makes it easy to see which product lines drive the most revenue.
@@ -277,7 +240,7 @@ Using the main and experiments notebooks, we built several visualizations to ans
 - **Time Series of Monthly Sales:** Line and area plots of monthly sales (with a 3‑month moving average) highlight seasonality, growth/decline periods, and peak months.
 - **Correlation Heatmaps:** Numeric correlations between `Amount`, `Qty`, and `Discount` are visualized via heatmaps, providing a quick view of how quantity and discount levels relate to sales.
 
-#### Power BI dashboard - early version
+#### Power BI dashboard.
 <img width="2817" height="1566" alt="PBI" src="https://github.com/user-attachments/assets/5dc10947-19b8-4274-96d6-d5303dd77402" />
 
 #### Other visualization examples
@@ -286,7 +249,7 @@ Using the main and experiments notebooks, we built several visualizations to ans
 ### Regression analysis
 In the regression-focused notebook (`experiments/Regression_Project_Amazon_Sales - 1.ipynb`), we begin exploring simple regression-style relationships between these numeric variables to better understand drivers of sales.
 
-### Early Business Insights
+# Conclusion
 
 Based on the current state of analysis (subject to refinement as the project continues):
 - A small number of **top product categories** account for a large share of total sales, suggesting an opportunity to double down on high-performing lines while reviewing the long tail of low-selling categories.
@@ -294,8 +257,7 @@ Based on the current state of analysis (subject to refinement as the project con
 - The **order status breakdown** reveals the proportion of cancelled or pending orders, which may hint at operational bottlenecks (e.g., logistics or inventory issues) that reduce realized revenue.
 - Correlation analysis shows how **quantity and discounts** are related to `Amount`, offering an early view on how discounting might boost volume and revenue (to be validated with deeper regression modelling).
 - Time-series plots show **peak months** where sales spike, which can inform seasonal planning and promotional calendars.
-
-These insights will be refined as we iterate on the regression experiments and potentially incorporate more advanced modelling.
+Our recommendation for the business stakeholders is to make use of the Random Forest Regression model as a decision-support tool but not yet a fully autonomous system. Continuous improvement is needed in expanding dataset and cross-department data collaboration to enrich model inputs and model maturity.
 
 ### Presentation link
 [placeholder]

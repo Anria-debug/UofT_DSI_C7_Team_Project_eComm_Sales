@@ -13,6 +13,7 @@
  - [Data Analysis and Recommendations](#data-analysis-and-recommendations)
  - [Conclusion](#conclusion)
  - [Team Videos](#team-videos)
+ - [Bonus: UofT color themes for Power BI and Excel](#Bonus-:-UofT-color-themes-for-Power-BI-and-Excel)
  - [Credits and Source](#credits)
    
 # Purpose and Overview 
@@ -275,12 +276,6 @@ Individual team member video links:
 [UofT Power BI color theme](https://github.com/pradziie/UofT_DSI_C7_Team_Project_eComm_Sales/blob/main/data/design/color%20themes/UofT%20Power%20BI%20Color%20Theme.json)
 (save and import it in Power BI Desktop via View → Themes → Browse for themes)
 
----
-
-## Future versions:
-
-- Extend the ProfitLens README with final metrics, concrete business recommendations, and links to the main visualizations and any productionized artefacts (reports, dashboards, or saved models in `models/`).
-- Ensure fully reproducible setup instructions (environment file or `requirements.txt`) and, if time permits, a lightweight script or notebook entry-point for regenerating all figures from the cleaned dataset.
 
 ## Credits and Source
   

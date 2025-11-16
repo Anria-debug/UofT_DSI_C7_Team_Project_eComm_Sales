@@ -134,6 +134,7 @@ To reproduce the analysis:
 - state
 - product type
 - date
+- amount
 # Data Cleaning
 - Removed technical or redundant columns such as `index` and `Unnamed: 22`.
 - Standardized column names and cleaned text fields (`Category`, `ship-state`, `Status`, etc.) by trimming whitespace and converting to lowercase to avoid duplicates.

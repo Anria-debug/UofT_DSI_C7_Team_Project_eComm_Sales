@@ -205,7 +205,7 @@ Ensuring these SKUs are always in stock can maximize revenue.
 # Model Performance Summary:
 Both models identify the same top-selling SKUs and use the same features, but the quality of insights is very different. Random Forest produces accurate predictions and meaningful feature importance, while Linear Regression provides weak predictions and unstable, contradictory coefficients.
 
-### Results of RFR are also confirmed by 
+### Results of RFR are also supported by 
 Sales by Category bar chart:
 
 <img width="714" height="528" alt="image" src="https://github.com/user-attachments/assets/c7002c46-9e9f-4a2b-b0b8-b70a6dc3325b" />

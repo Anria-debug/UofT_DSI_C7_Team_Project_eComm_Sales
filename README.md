@@ -265,7 +265,7 @@ Our recommendation for the business stakeholders is to make use of the Random Fo
 [placeholder]
 
 Individual team member video links:
-[Iryna]()
+[Iryna](https://drive.google.com/file/d/1LB2xYGn2IAvMGN7PT1Lnmuflfl_v5SPW/view?usp=sharing)
 
 [Vikrama]()
 
